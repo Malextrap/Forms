@@ -42,6 +42,4 @@ class Switch {
 };
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    new Switch();
-});
+document.addEventListener("DOMContentLoaded", () => new Switch());
