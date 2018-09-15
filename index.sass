@@ -13,3 +13,162 @@
  *
  * All rights reserved for clonalejandro ©malextrap 2017 / 2018
  */
+/**
+ * Created by alejandrorioscalera
+ * On 12/12/17
+ *
+ * -- SOCIAL NETWORKS --
+ *
+ * GitHub: https://github.com/clonalejandro or @clonalejandro
+ * Website: https://clonalejandro.me/
+ * Twitter: https://twitter.com/clonalejandro11/ or @clonalejandro11
+ * Keybase: https://keybase.io/clonalejandro/
+ *    
+ * -- LICENSE --
+ *
+ * All rights reserved for clonalejandro ©malextrap 2017 / 2018
+ */
+
+
+/** SMALL CONSTRUCTORS **/
+
+@import "../elements/colors"
+
+
+/** REST **/
+
+form
+  margin: auto
+  display: flex
+
+label
+  margin: auto 1rem auto auto
+  width: 100%
+
+input
+  border-radius: 18px
+  border-width: 0.5px
+  border-color: rgba(000, 000, 000, 0.1)
+  padding: .5rem
+
+  &::placeholder
+    color: rgba(000, 000, 000, 0.3)
+  &[disabled]
+    background: rgba(122, 133, 155, 0.1)
+
+div.form-group
+  margin: auto auto 1rem auto
+  text-align: center
+  align-self: center
+  margin-bottom: 3rem
+  align-content: center
+  align-items: center
+  &.in-line > label
+    margin: auto auto .5rem auto
+    display: inline-block
+
+
+/** OTHERS **/
+
+select
+  align-items: flex-start
+  border-style: none
+  box-sizing: border-box
+  border-width: 0
+  border-color: inherit
+  border-image: initial
+  font-size: 0.9em
+  line-height: 1.17em!important
+  font-weight: 700
+  position: relative
+  display: inline-block
+  margin: .5em
+  padding: 0.5em 2em 0.5em 2.25em
+  border-radius: 2em
+  background: $primary
+  -webkit-appearance: button
+  color: $pure_white
+  text-decoration: none
+  text-align: left
+  cursor: pointer
+
+
+/** SWITCH **/
+
+.switch
+  position: relative
+  display: inline-block
+  vertical-align: top
+  width: 52px
+  height: 22px
+  margin: 1% 10px 10px 0
+  border-radius: 20px
+  cursor: pointer
+
+.switch-input
+  position: absolute
+  opacity: 0
+
+.switch-label
+  position: relative
+  display: block
+  height: inherit
+  border-radius: inherit
+  font-size: 9px
+  text-transform: uppercase
+  font-family: Helvetica
+  &:before, &:after
+    position: absolute
+    top: -20%
+    -webkit-transition: inherit
+    transition: inherit
+  &:before
+    content: attr(data-off)
+    right: 8px
+    color: $pure_white
+  &:after
+    content: attr(data-on)
+    left: 11px
+    color: $pure_white
+    opacity: 0
+
+.switch-input:checked ~ .switch-label
+  background: $green
+  &:before
+    opacity: 0
+  &:after
+    opacity: 1
+
+.switch-handle
+  position: absolute
+  width: 18px
+  height: 18px
+  border-radius: 100%
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+  top: 2px
+  left: 2px
+  background: $pure_white
+
+.switch-label, .switch-handle
+  transition: all 0.2s ease-out
+  -webkit-transition: all 0.2s ease-out
+
+.switch-label
+  background: #C3C7C7
+  &:after
+    color: $pure_white
+
+.switch-flat .switch-input:checked ~ .switch-label
+  background: $green
+
+.switch-input:checked ~ .switch-handle
+  transform: translate3d(30px, 0, 0)
+  background: #ffffff
+  box-shadow: none
+
+
+div.form-group.in-line
+  & > select
+    margin: .5em -.5em
+  & > .switch
+    margin: 1% 10px 10px 0
