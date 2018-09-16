@@ -73,3 +73,13 @@ A forms with switch click for test: <a href="https://malextrap.github.io/Forms/s
                     </div>
                 </form>
 ```
+<br>
+
+
+
+![picture](https://i.imgur.com/1mIWzya.png)
+
+
+## Copyright ©
+#### Developed by clonalejandro
+         
